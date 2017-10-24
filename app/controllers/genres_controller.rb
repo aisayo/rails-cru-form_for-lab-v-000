@@ -25,6 +25,7 @@ class GenresController < ApplicationController
   def update
     @genre = Genre.find(params[:id])
     @genre.name = params[:genre][:name]
-    @genre.save
+    @genre.update
+    redirect_to 
   end
 end
