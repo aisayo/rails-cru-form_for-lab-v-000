@@ -8,5 +8,7 @@ class GenresController < ApplicationController
   end
 
   def create
+    @genre = Genre.new
+    @genre.name = params[:genre][:name]
   end
 end
