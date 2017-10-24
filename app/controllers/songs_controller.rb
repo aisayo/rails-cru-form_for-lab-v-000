@@ -14,6 +14,7 @@ class SongsController < ApplicationController
   def create
     @song = Song.new
     @song.name = params[:song][:name]
+    @song.artist = params[:song][:artist_id]
   end
 
   def edi
