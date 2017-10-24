@@ -1,10 +1,9 @@
 <h3>Artist Form</h3>
-<form>
-  <label>Artist Name:</label><br>
-  <input type="text" id="name" name="artist[name]"><br>
+<%= form_for(@artist) do |f|%>
+  <label>Artist Name</label><br>
+  <%= f.text_field :name %><br>
+  <label>Artist Bio</label><br>
+  <%= f.text_field :bio %><br>
 
-  <label>Artist Bio:</label><br>
-  <textarea id="bio" name="artist[bio]"></textarea><br>
-
-  <input type="submit" value="Submit Post">
-</form>
+  <%= f.submit %>
+<% end %>
