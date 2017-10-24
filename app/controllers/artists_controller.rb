@@ -24,6 +24,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
     @artist.name = params[:artist][:name]
     @artist.bio = params[:artist][:bio]
+    @artist.save
     redirect_to student_path(@student)
   end
 
