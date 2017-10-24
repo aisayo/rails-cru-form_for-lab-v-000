@@ -2,6 +2,6 @@ class GenresController < ApplicationController
   def show
   end
 
-  def new 
+  def new
   end
 end
