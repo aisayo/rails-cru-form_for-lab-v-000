@@ -11,5 +11,6 @@ class GenresController < ApplicationController
     @genre = Genre.new
     @genre.name = params[:genre][:name]
     @genre.save
+    redirect_to genres_path(@genre)
   end
 end
