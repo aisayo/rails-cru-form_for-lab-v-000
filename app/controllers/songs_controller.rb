@@ -23,7 +23,7 @@ class SongsController < ApplicationController
   def update
   end
 
-  private
+private
 
   def song_params
     params.require(:song).permit(:name, :artist_id, :genre_id)
