@@ -17,6 +17,7 @@ class SongsController < ApplicationController
     @song.artist = params[:song][:artist_id]
     @song.genre = params[:song][:genre_id]
     @song.save
+    redirect_to song_path(@song)
   end
 
   def edi
