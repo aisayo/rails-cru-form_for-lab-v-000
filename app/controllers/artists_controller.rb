@@ -21,7 +21,7 @@ class ArtistsController < ApplicationController
   end
 
   def update
-    @artist = Artist.new
+    @artist = Artist.find(params[:id])
     @artist.update(params.require(:artist))
     redirect_to student_path(@student)
   end
