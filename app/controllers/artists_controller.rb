@@ -12,7 +12,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.new
     @artist.name = params[:artist][:name]
     @artist.bio = params[:artist][:bio]
-    @artist.update
+    @artist.save
   end
 
 
