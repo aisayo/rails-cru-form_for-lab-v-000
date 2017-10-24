@@ -17,7 +17,7 @@ class SongsController < ApplicationController
     redirect_to song_path(@song)
   end
 
-  def edi
+  def edit
   end
 
   def update
