@@ -13,6 +13,7 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.new
+    @song.name = params[:song][:name]
   end
 
   def edi
