@@ -21,4 +21,7 @@ class GenresController < ApplicationController
   def edit
     @genre = Genre.find(params:id)
   end
+
+  def update
+  end
 end
