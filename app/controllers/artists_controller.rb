@@ -25,7 +25,7 @@ class ArtistsController < ApplicationController
     @artist.name = params[:artist][:name]
     @artist.bio = params[:artist][:bio]
     @artist.save
-    redirect_to student_path(@student)
+    redirect_to students_path(@student)
   end
 
 
