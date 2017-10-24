@@ -21,6 +21,8 @@ class ArtistsController < ApplicationController
   end
 
   def update
+    @artist = Artist.new
+    @artist.update(params.require(:artist))
   end
 
 
