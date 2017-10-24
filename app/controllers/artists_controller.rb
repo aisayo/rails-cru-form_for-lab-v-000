@@ -16,5 +16,8 @@ class ArtistsController < ApplicationController
     redirect_to artist_path(@artist)
   end
 
+  def edit
+  end
+
 
 end
