@@ -12,6 +12,7 @@ class SongsController < ApplicationController
   end
 
   def create
+    @song = Song.new
   end
 
   def edi
@@ -19,5 +20,5 @@ class SongsController < ApplicationController
 
   def update
   end
-  
+
 end
